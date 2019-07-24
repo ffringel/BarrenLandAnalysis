@@ -6,8 +6,9 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 public class ReadInputTest {
-    Land myLand;
+    private Land myLand;
 
+    // Test we get expected outcome when no input is given
     @Test
     public void testNoInputs() {
         myLand = new Land();
@@ -24,6 +25,7 @@ public class ReadInputTest {
         assertEquals(0, myLand.getBarrenLands().size());
     }
 
+    // test we get expected outcome and program fails if we input wrong type
     @Test
     public void testInvalidInputs() {
         myLand = new Land();
@@ -39,6 +41,7 @@ public class ReadInputTest {
         assertTrue(fails);
     }
 
+    // test size of barren land size is one when we input only one rectangle
     @Test
     public void testSingleCoord() {
         myLand = new Land();
@@ -55,10 +58,11 @@ public class ReadInputTest {
         assertEquals(1, myLand.getBarrenLands().size());
     }
 
+    // test size of barren land is equal to the number of rectangle input
     @Test
     public void testMultipleCoords() {
         myLand = new Land();
-        String input = new String("{“10 10 20 20”, “20 20 30 30”, “5 20 10 30”, “10 30 20 40”}");
+        String input = new String("{“10 10 20 201”, “20 20 30 30”, “15 20 10 30”, “10 30 210 415”}");
         boolean fails = false;
 
         try {

@@ -6,8 +6,9 @@ import static org.junit.Assert.assertEquals;
 
 public class BarrenLandAnalysisTest {
 
-    Land myLand = new Land();
+    private Land myLand = new Land();
 
+    // test all land cells are fertile initially
     @Test
     public void testClearLandCells() {
         int result = 0, land = 0;
@@ -22,6 +23,7 @@ public class BarrenLandAnalysisTest {
         assertEquals(result, land);
     }
 
+    // test barren area is filled in land grid properly given a single rectangle
     @Test
     public void testFillLandCells() {
         String input = new String("{“0 292 399 307”}");
@@ -44,6 +46,7 @@ public class BarrenLandAnalysisTest {
         assertEquals(result, land);
     }
 
+    // test barren areas on land grid are filled properly given multiple rectangles
     @Test
     public void testFillLandCellsMulti() {
         String input = new String("{“48 192 351 207”, “48 392 351 407”, “120 52 135 547”, “260 52 275 547”}");
@@ -66,6 +69,7 @@ public class BarrenLandAnalysisTest {
         assertEquals(result, land);
     }
 
+    // test if no input is given, then fertile area is size of 400 * 600
     @Test
     public void testCalculateFertileArea1() {
         myLand = new Land();
@@ -86,6 +90,7 @@ public class BarrenLandAnalysisTest {
         assertEquals(result, BarrenLandAnalysis.printOutput(myLand));
     }
 
+    // test given a single rectangle, size of fertile land is the actual result expected.
     @Test
     public void testCalculateFertileArea2() {
         myLand = new Land();
@@ -106,6 +111,7 @@ public class BarrenLandAnalysisTest {
         assertEquals(result, BarrenLandAnalysis.printOutput(myLand));
     }
 
+    // test result for fertile land given multiple rectangle is actual result expected
     @Test
     public void testCalculatefertileArea3() {
         myLand = new Land();

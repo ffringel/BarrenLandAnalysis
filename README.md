@@ -41,13 +41,14 @@ Output all the fertile land area in square meters, sorted from smallest area to
 
 ##### 2. Using Intellij (or any java IDE)
 
-- After cloning the repo, open the project in your IDE and run the BarrenLandAnalysis class.
 - ###### N.B: Lombok Plugin must be installed
+- After cloning the repo, open the project in your IDE and run the BarrenLandAnalysis class.
+
  
 ### Testing
 
 - To test the app, run `mvn test`
 
-### Ci/CD
+### CI/CD
 
 CI/CD has been configured such that for every push to this repo, Travis CI runs the tests

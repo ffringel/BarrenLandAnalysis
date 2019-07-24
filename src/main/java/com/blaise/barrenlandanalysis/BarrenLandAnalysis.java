@@ -21,7 +21,7 @@ public class BarrenLandAnalysis {
     }
 
     /**
-     * @param myLand
+     * @param myLand of type Land
      * This sets all the cells in our Land grid to 0,
      * where 0 represents a fertile piece of land.
      */
@@ -33,7 +33,7 @@ public class BarrenLandAnalysis {
     }
 
     /**
-     * @param myLand
+     * @param myLand of type Land
      * Looks for barren areas in the land and set it to 1.
      */
     public static void fillLandCells(Land myLand) {
@@ -49,7 +49,7 @@ public class BarrenLandAnalysis {
     }
 
     /**
-     * @param myLand
+     * @param myLand of type Land used to calculate area of fertile land against barren land
      * This is where the magic of BFS occurs :)
      * Use BFS to compute the areas of fertile land
      */
@@ -100,10 +100,10 @@ public class BarrenLandAnalysis {
     }
 
     /**
-     * @param i
-     * @param j
-     * @param myLand
-     * Queue used during BFS of fertile land.
+     * @param i of type int use to get x coordinate of barren land
+     * @param j of type int use to get y coordinate of barren land
+     * @param myLand of type Land representing the whole farm land
+     * Queue is use to keep track of nodes to visit during BFS.
      */
     private static void addQueue(int i, int j, Land myLand) {
         LinkedList<Integer[]> queue = myLand.getQueue();
