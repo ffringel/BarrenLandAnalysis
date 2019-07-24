@@ -47,3 +47,7 @@ Output all the fertile land area in square meters, sorted from smallest area to
 ### Testing
 
 - To test the app, run `mvn test`
+
+### Ci/CD
+
+CI/CD has been configured such that for every push to this repo, Travis CI runs the tests
