@@ -51,7 +51,7 @@ public class BarrenLandAnalysis {
     /**
      * @param myLand
      * This is where the magic of BFS occurs :)
-     *
+     * Use BFS to compute the areas of fertile land
      */
     public static void calculateFertileAreas(Land myLand) {
        int[][] farmLand = myLand.getFarmLand();
