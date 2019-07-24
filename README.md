@@ -39,7 +39,7 @@ Output all the fertile land area in square meters, sorted from smallest area to
 - Run `mvn clean install` to build the project
 - Run `java -jar target/BarrenLandAnalysis.jar` and follow the command line prompts to input sample data
 
-##### 2. Using an Intellij (or any java IDE)
+##### 2. Using Intellij (or any java IDE)
 
 - After cloning the repo, open the project in your IDE and run the BarrenLandAnalysis class.
 - ###### N.B: Lombok Plugin must be installed
