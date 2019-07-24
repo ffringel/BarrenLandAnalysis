@@ -37,7 +37,7 @@ Output all the fertile land area in square meters, sorted from smallest area to
 
 - Clone this repo and navigate to it's root
 - Run `mvn clean install` to build the project
-- Run `java -jar target/BarrenLandAnalysis.jar` and follow the command line prompts to input sample data
+- Run `java -jar target/BarrenLandAnalysis-1.0-SNAPSHOT.jar` and follow the command line prompts to input sample data
 
 ##### 2. Using Intellij (or any java IDE)
 
